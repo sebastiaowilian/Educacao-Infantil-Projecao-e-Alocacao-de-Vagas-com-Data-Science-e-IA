@@ -48,10 +48,10 @@ ARIMA, Árvore de Decisão, Dashboards, GeoSpatial + Machine Learning, K-Means, 
 # 4. Estrutura Proposta para o Artigo do TCC
 
 1. Resumo e Abstract: Síntese do problema das filas e a proposta de solução baseada em algoritmos de emparelhamento e predição.
-2. Revisão Bibliográfica: Análise da IA ética, EBIA e experiências internacionais (NYC/Chile). Foco em sistemas de matching e nos princípios de transparência e explicabilidade.
-3. Metodologia: Descrição do pipeline ETL em Python, utilizando bibliotecas como Scikit-learn, Prophet e GeoPandas. Detalhamento do uso de classificadores para identificar objetos de gasto e prever conversão de demanda em matrícula.
-4. Resultados e Discussão: Projeção de filas vs. capacidade física. Nesta seção, os benchmarks do Poder Executivo Federal (PEF) — como o gasto médio de 6% do orçamento em TI e a concentração de 80% em custeio de infraestrutura — serão utilizados como parâmetros referenciais para avaliar a realidade de Praia Grande/SP. Uso da Amplitude Interquartil (IQR) para saneamento de outliers nos tempos de espera.
-5. Conclusão: Reflexão sobre os desafios de implementação, incluindo a infraestrutura tecnológica local e a governança de dados sensíveis de menores.
+2. Revisão Bibliográfica: Análise da IA ética, consideração de experiências internacionais (NYC/Chile/China). Foco em sistemas de matching e nos princípios de transparência e explicabilidade.
+3. Metodologia: Descrição do pipeline ETL em Python, utilizando bibliotecas como Scikit-learn, Prophet e GeoPandas. Detalhamento do uso de classificadores para identificar objetos de gasto e prever conversão de demanda em matrícula motivadoras para criação de vagas futuras.
+4. Resultados e Discussão: Projeção de filas vs. capacidade física, associação de multiplas variáveis para predição de vagas como natalidade, adensamento populacional, variações de renda, mobilidade urbana e etc.
+5. Conclusão: Reflexão sobre os desafios de implementação, incluindo a infraestrutura tecnológica local e verbas, predição acertiva para orientar a criação de vagas e encaminhamento de alunos de maneira menos reativa
 
 # 5. Principais Conceitos a Serem Estudados
 
