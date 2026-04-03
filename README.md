@@ -1,2 +1,70 @@
 # Educacao-Infantil-Projecao-e-Alocacao-de-Vagas-com-Data-Science-e-IA
 Este projeto visa a estruturação de um Artigo para TCC focado no estudo da problematica social e aplicação de Ciência de Dados e Inteligência Artificial para atuar no problema de alocação e previsão de vagas na educação infantil pública, com estudo de caso voltado, inicialmente, ao município de Praia Grande/SP.
+Projeto de TCC: Projeção e Alocação de Vagas com Data Science e IA na Educação Infantil em Praia Grande/SP
+
+1. Introdução e Contextualização
+
+A administração pública brasileira enfrenta atualmente o desafio de converter a "revolução dos dados" em melhorias tangíveis na entrega de serviços ao cidadão. Conforme discutido na literatura técnica da Enap, a gestão de políticas públicas ainda sofre com uma persistente "lacuna informacional" — onde o excesso de dados brutos não se traduz em inteligência — e um "gap de competências" analíticas, com estimativas de que 20% da força de trabalho federal atua em funções passíveis de automação, mas carece de habilidades para lidar com grandes volumes de dados.
+
+No âmbito da Educação Infantil, essa deficiência analítica impacta a garantia de direitos fundamentais, especificamente na gestão de filas de espera e na expansão da rede escolar. O uso de Inteligência Artificial (IA) e Ciência de Dados surge como ferramenta indispensável para descobrir necessidades reprimidas e mapear a demanda regional de forma dinâmica. Em municípios com crescimento populacional acelerado, como Praia Grande/SP, a transição de decisões baseadas em intuição política para modelos orientados por evidências é o único caminho para a eficiência alocativa.
+
+A tomada de decisão em políticas públicas, orientada pelo respeito aos direitos fundamentais e valores democráticos, exige o uso de evidências técnicas sólidas para garantir que a alocação de recursos seja eficiente, justa e transparente.
+
+2. Objetivos do Projeto
+
+Objetivo Geral: Otimizar a alocação e a projeção de vagas na rede de Educação Infantil do município de Praia Grande/SP por meio do desenvolvimento de modelos preditivos e algoritmos de inteligência de dados, utilizando benchmarks federais como referência de eficiência.
+
+Objetivos Específicos:
+
+* Mapear a demanda por região (distrito/setor educacional), identificando gargalos geográficos e áreas de alta vulnerabilidade social.
+* Aplicar algoritmos de matching (Gale-Shapley e Top Trading Cycles) integrados à Reatribuição Dinâmica (PLDA) para garantir um emparelhamento estável e eficiente entre aluno e unidade escolar, mesmo após desistências iniciais.
+* Desenvolver modelos de séries temporais (Prophet e ARIMA) via Python para prever o tamanho das filas de espera e antecipar a necessidade de novas turmas.
+* Analisar e implementar critérios de governança e ética em IA, assegurando a conformidade com a LGPD e a mitigação de vieses algorítmicos através de métricas de Fairness.
+
+3. Materiais Utilizados (Referencial Teórico e Prático)
+
+3.1. Vídeos e Tutoriais
+
+Título do Conteúdo	Plataforma/Canal	Foco Técnico
+Aprenda a interpretar modelos Logit e Probit	Econometria Fácil	Modelagem de probabilidade para eventos binários; por que evitar OLS em probabilidades <0 ou >1.
+O Aprendizado Não Supervisionado e a Base Teórica do K Means	Hashtag Programação	Clusterização, Inércia e o Método do Cotovelo (Elbow Method) para definição do número ideal de grupos.
+
+3.2. Leituras e Bases de Dados
+
+* Fontes de Dados e Referências Metodológicas: Dados Gerenciais SME (SIGPEC/EOL), plataforma Vaga na Creche e Pátio Digital. O projeto utilizará o modelo do GeoSampa e InfoCidade (São Paulo) como blueprint metodológico para o mapeamento espacial em Praia Grande/SP.
+* Bases Nacionais: Censo Escolar/INEP e indicadores do Observa Primeira Infância.
+* Textos Base:
+  * Ciência de Dados em Políticas Públicas: uma experiência de formação (Enap, 2022).
+  * Estratégia Brasileira de Inteligência Artificial (EBIA).
+  * Estudos de caso de Nova York (NYC) sobre escolha escolar e reatribuição dinâmica.
+
+4. Estrutura Proposta para o Artigo do TCC
+
+1. Resumo e Abstract: Síntese do problema das filas e a proposta de solução baseada em algoritmos de emparelhamento e predição.
+2. Revisão Bibliográfica: Análise da IA ética, EBIA e experiências internacionais (NYC/Chile). Foco em sistemas de matching e nos princípios de transparência e explicabilidade.
+3. Metodologia: Descrição do pipeline ETL em Python, utilizando bibliotecas como Scikit-learn, Prophet e GeoPandas. Detalhamento do uso de classificadores para identificar objetos de gasto e prever conversão de demanda em matrícula.
+4. Resultados e Discussão: Projeção de filas vs. capacidade física. Nesta seção, os benchmarks do Poder Executivo Federal (PEF) — como o gasto médio de 6% do orçamento em TI e a concentração de 80% em custeio de infraestrutura — serão utilizados como parâmetros referenciais para avaliar a realidade de Praia Grande/SP. Uso da Amplitude Interquartil (IQR) para saneamento de outliers nos tempos de espera.
+5. Conclusão: Reflexão sobre os desafios de implementação, incluindo a infraestrutura tecnológica local e a governança de dados sensíveis de menores.
+
+5. Principais Conceitos Abordados
+
+* Gale-Shapley (Deferred Acceptance) & PLDA: Algoritmo de emparelhamento estável que otimiza a satisfação das preferências das famílias. A inclusão da Reatribuição Dinâmica (PLDA) é fundamental para tratar vagas remanescentes e desistências de forma justa.
+* Séries Temporais (Prophet/ARIMA): Modelos estatísticos para previsão do crescimento da fila de espera, permitindo que a secretaria antecipe a abertura de turmas antes do colapso da capacidade física.
+* Clustering (K-Means): Técnica de aprendizado não supervisionado para criar perfis de demanda. O projeto empregará a Inércia e o Método do Cotovelo para identificar "Regiões Prioritárias" com base em vulnerabilidade socioeconômica e carência de cobertura escolar.
+* Modelos Logit/Probit: Modelos de escolha discreta superiores à regressão linear para eventos binários (participar ou não da rede), pois garantem que as probabilidades previstas permaneçam no intervalo matemático de 0 a 1.
+* Princípios da IA Ética e Fairness: A aplicação de Justiça (Fairness) será tratada como um constrangimento matemático dentro do algoritmo (conforme as 21 definições de Narayanan), buscando evitar que vieses geográficos ou socioeconômicos prejudiquem grupos específicos.
+
+6. Datasets e Fontes de Dados (Ground Truth)
+
+Para a viabilidade do projeto em Praia Grande/SP, as seguintes bases e referências são necessárias:
+
+* [ ] Dados Gerenciais SME (Sistemas SIGPEC e EOL).
+* [ ] Plataforma Vaga na Creche (Dados de fila em tempo real).
+* [ ] Censo Escolar/INEP.
+* [ ] Pátio Digital e InfoCidade (Referenciais de evolução de demanda).
+* [ ] Shapefiles municipais (Inspirados no modelo GeoSampa para mapeamento de distritos e setores).
+
+7. Link para este projeto no NotebookLM
+
+https://notebooklm.google.com/notebook/7d98006b-9608-47a6-ac6e-62914b5f17ba
+
