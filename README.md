@@ -1,5 +1,6 @@
 # Educação Infantil: Projeção e Alocação de Vagas com Data Science e IA
 Este projeto visa a estruturação de um Artigo para TCC focado no estudo da problematica social e aplicação de Ciência de Dados e Inteligência Artificial para atuar no problema de alocação e previsão de vagas na educação infantil pública, com estudo de caso voltado, inicialmente, ao município de Praia Grande/SP.
+
 Projeto de TCC: Projeção e Alocação de Vagas com Data Science e IA na Educação Infantil em Praia Grande/SP
 
 # 1. Introdução e Contextualização
@@ -18,7 +19,7 @@ A tomada de decisão em políticas públicas, orientada pelo respeito aos direit
 ##### Objetivos Específicos:
 * Mapear a demanda por região (distrito/setor educacional), identificando gargalos geográficos e áreas de alta vulnerabilidade social.
 * Aplicar algoritmos de matching (Gale-Shapley e Top Trading Cycles) integrados à Reatribuição Dinâmica (PLDA) para garantir um emparelhamento estável e eficiente entre aluno e unidade escolar, mesmo após desistências iniciais.
-* Desenvolver modelos de séries temporais (Prophet e ARIMA) via Python para prever o tamanho das filas de espera e antecipar a necessidade de novas turmas.
+* Desenvolver modelos de séries temporais (Como Prophet, ARIMA, Variações de Arvores de decisoes simples e/ou sequenciais/boosting ) via Python para prever o tamanho das filas de espera e antecipar a necessidade de novas turmas.
 * Analisar e implementar critérios de governança e ética em IA, assegurando a conformidade com a LGPD e a mitigação de vieses algorítmicos através de métricas de Fairness.
 
 # 3. Materiais Utilizados (Referencial Teórico e Prático)
@@ -31,7 +32,7 @@ ARIMA, Árvore de Decisão, Dashboards, GeoSpatial + Machine Learning, K-Means, 
 
 ##### 1. Fontes de Dados e Referências Metodológicas: 
 * Dados Gerenciais SME (SIGPEC/EOL), plataforma Vaga na Creche e Pátio Digital. O projeto utilizará o modelo do GeoSampa e InfoCidade (São Paulo) como blueprint metodológico para o mapeamento espacial em Praia Grande/SP.
-* Bases Nacionais: Censo Escolar/INEP e indicadores do Observa Primeira Infância.
+* Bases Nacionais: Censo Escolar/INEP, Crescimento Demográfico — IBGE, Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS), Vulnerabilidade Social — IPVS (SEADE), Dados Institucionais — Prefeitura de Praia Grande e indicadores do Observa Primeira Infância.
 ##### 2. Textos Base/ Trabalhos de referência:
 * Análise Experimental de Modelos Preditivos para a Previsão da Demanda por Vagas na Rede Pública de Ensino
 * Acesso à creche nos municípios brasileiros
@@ -59,6 +60,9 @@ ARIMA, Árvore de Decisão, Dashboards, GeoSpatial + Machine Learning, K-Means, 
 * Séries Temporais (Prophet/ARIMA): Modelos estatísticos para previsão do crescimento da fila de espera, permitindo que a secretaria antecipe a abertura de turmas antes do colapso da capacidade física.
 * Clustering (K-Means): Técnica de aprendizado não supervisionado para criar perfis de demanda. O projeto empregará a Inércia e o Método do Cotovelo para identificar "Regiões Prioritárias" com base em vulnerabilidade socioeconômica e carência de cobertura escolar.
 * Modelos Logit/Probit: Modelos de escolha discreta superiores à regressão linear para eventos binários (participar ou não da rede), pois garantem que as probabilidades previstas permaneçam no intervalo matemático de 0 a 1.
+* XAI com SHAP
+* Featuring Engineering
+* Conformal Prediction
 * Princípios da IA Ética e Fairness: A aplicação de Justiça (Fairness) será tratada como um constrangimento matemático dentro do algoritmo (conforme as 21 definições de Narayanan), buscando evitar que vieses geográficos ou socioeconômicos prejudiquem grupos específicos.
 
 # 6. Datasets e Fontes de Dados (Ground Truth)
